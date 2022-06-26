@@ -3,12 +3,19 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import axios from 'axios'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
+Vue.use(ElementUI)
 Vue.config.productionTip = false
-console.log({ axios })
+
+// Vue.config.errorHandler = function (err, vm, info) {
+//   console.log(err, vm, info)
+// }
+
 axios.defaults.baseURL = 'http://39.108.224.26:5000/api/private/v1/'
 Vue.prototype.$http = axios
-
+/***********    qiu1 start  ***********/
 axios.interceptors.response.use(
   function (response) {
     // 对响应数据做点什么
@@ -19,6 +26,8 @@ axios.interceptors.response.use(
     return Promise.reject(error)
   }
 )
+/***********    qyl tyy  start  ***********/
+/***********    qiu2 start  ***********/
 new Vue({
   router,
   store,

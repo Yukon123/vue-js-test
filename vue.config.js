@@ -1,4 +1,5 @@
 module.exports = {
+  lintOnSave: true,
   configureWebpack: {
     resolve: {
       extensions: ['.js', '.vue', '.json', '.css'],
@@ -11,4 +12,15 @@ module.exports = {
       },
     },
   },
+  // chainWebpack: (config) => {
+  //   config.module
+  //     .rule('url-loader')
+  //     .test(/\.(png|jpg|gif)$/)
+  //     .use('url-loader')
+  //     .loader('url-loader')
+  //     .options({
+  //       limit: 18195,
+  //     })
+  //     .end()
+  // },
 }
