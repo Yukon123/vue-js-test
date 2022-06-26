@@ -1,6 +1,15 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <el-header>
+      <el-tabs type="border-card" @tab-click="toDirectPath">
+        <el-tab-pane label="饿了吗表单" name="eleForm"></el-tab-pane>
+        <el-tab-pane label="Css世界" name="cssworld"></el-tab-pane>
+        <el-tab-pane label="布局" name="layout"></el-tab-pane>
+      </el-tabs>
+    </el-header>
+    <el-main>
+      <router-view></router-view>
+    </el-main>
   </div>
 </template>
 
@@ -12,8 +21,8 @@ export default {
     }
   },
   methods: {
-    toPath(value) {
-      this.$router.push(value)
+    toDirectPath({ name }) {
+      this.$router.push({ name })
     },
   },
 }

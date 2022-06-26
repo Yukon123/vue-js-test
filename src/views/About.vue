@@ -97,7 +97,7 @@ export default {
     },
     createStateFilter(queryString) {
       return (state) => {
-        return state.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0
+        return state.value.toLowerCase().indexOf(queryString?.toLowerCase()) === 0
       }
     },
     handleSelect(item) {

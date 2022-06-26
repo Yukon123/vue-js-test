@@ -33,7 +33,7 @@ const routes = [
   },
   {
     path: '/layout',
-    name: 'Layout',
+    name: 'layout',
 
     component: () => import(/* webpackChunkName: "Layout" */ '../views/Layout.vue'),
   },
@@ -50,8 +50,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "CssWorld" */ '../views/CSSword.vue'),
   },
   {
-    path: '/EleForm',
-    name: 'EleForm',
+    path: '/eleForm',
+    name: 'eleForm',
 
     component: () => import(/* webpackChunkName: "CssWorld" */ '../views/EleForm.vue'),
   },
