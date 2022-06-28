@@ -4,6 +4,8 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import '@/tool/element-ui.js'
+import * as echarts from 'echarts'
+window.echarts = echarts
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
 

@@ -55,6 +55,12 @@ const routes = [
 
     component: () => import(/* webpackChunkName: "CssWorld" */ '../views/EleForm.vue'),
   },
+  {
+    path: '/echarts',
+    name: 'echarts',
+
+    component: () => import(/* webpackChunkName: "CssWorld" */ '../views/echarts/Echarts.vue'),
+  },
 ]
 
 const router = new VueRouter({
